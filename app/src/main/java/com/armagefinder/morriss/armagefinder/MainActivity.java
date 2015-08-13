@@ -1,18 +1,58 @@
 package com.armagefinder.morriss.armagefinder;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
+    CheckBox PCheckBox, DPCheckBox, PPCheckBox;
+    public static int age;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        PCheckBox = (CheckBox) findViewById(R.id.PCheckBox);
+        PPCheckBox = (CheckBox) findViewById(R.id.PPCheckBox);
+        DPCheckBox = (CheckBox) findViewById(R.id.DPCheckBox);
     }
+
+    public void onCheckboxClicked(View view) {
+
+        switch(view.getId()) {
+
+            case R.id.PCheckBox:
+
+                PPCheckBox.setChecked(false);
+                DPCheckBox.setChecked(false);
+                Intent pitcher = new Intent(this, PitcherActivity.class);
+                startActivity(pitcher);
+                age += 5;
+                break;
+
+            case R.id.PPCheckBox:
+
+                PCheckBox.setChecked(false);
+                DPCheckBox.setChecked(false);
+
+                break;
+
+            case R.id.DPCheckBox:
+
+                PCheckBox.setChecked(false);
+                PPCheckBox.setChecked(false);
+
+                break;
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
