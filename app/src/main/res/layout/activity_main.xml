@@ -1,0 +1,97 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="#ff000000">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#ff000000">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/headerTableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/headerTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="18sp"
+                android:text="What position do you play?"
+                android:gravity="center"
+                android:textColor="#ffffffff">
+            </TextView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/PCheckBox"
+            android:text="Pitcher"
+            android:textColor="#ffffffff"
+            android:buttonTint="#ffffffff"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"></CheckBox>
+        <CheckBox
+            android:id="@+id/PPCheckBox"
+            android:text="Positon Player"
+            android:textColor="#ffffffff"
+            android:buttonTint="#ffffffff"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"></CheckBox>
+        <CheckBox
+            android:id="@+id/DPCheckBox"
+            android:text="Dual Player"
+            android:textColor="#ffffffff"
+            android:buttonTint="#ffffffff"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"></CheckBox>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/blankRow"
+        android:text=""
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" >
+        <TextView
+            android:id="@+id/blankTextRow"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/imageLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/browning"
+            android:src= "@mipmap/browning"/>
+    </LinearLayout>
+
+    </TableLayout>
+</RelativeLayout>
