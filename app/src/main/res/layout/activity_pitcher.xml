@@ -24,7 +24,7 @@
         android:orientation="horizontal"
         android:id="@+id/headerTableRow"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
         android:layout_gravity="center">
         <TextView
             android:id="@+id/headerTextView"
@@ -36,6 +36,21 @@
             android:text="Answer the following questions:"
             android:gravity="center"
             android:textColor="#ffffffff">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/blankRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/blankTextViewRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="">
         </TextView>
     </LinearLayout>
 
@@ -66,19 +81,53 @@
 
         <LinearLayout
             android:orientation="horizontal"
+            android:id="@+id/blankRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/blankTextViewRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:id="@+id/tableRow2"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:gravity="center">
             <TextView
                 android:id="@+id/Question2Text"
-                android:layout_width="250dp"
-                android:maxLines="5"
+                android:layout_width="325dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold"
                 android:typeface="serif"
                 android:textSize="14sp"
-                android:text="How many years have you been pitching?"
+                android:text="How many years have"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question2TextLine2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="you been pitching?"
                 android:gravity="left"
                 android:textColor="#ffffffff">
             </TextView>
@@ -87,8 +136,335 @@
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:gravity="right"
+                android:background="#ffd700">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/blankRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/blankTextViewRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question3Text"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="How hard do you throw? (MPH)"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+            <EditText
+                android:id="@+id/Question3EditText"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
                 android:background="#ffd700" />
         </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/blankRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/blankTextViewRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question4Text"
+                android:layout_width="325dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="How many days a week"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question4TextLine2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="do you play catch?"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+            <EditText
+                android:id="@+id/Question4EditText"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="#ffd700">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/blankRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/blankTextViewRow5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow7"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question5Text"
+                android:layout_width="325dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="How many days a week do"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow8"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question5TextLine2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="you throw a flatground?"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+            <EditText
+                android:id="@+id/Question5EditText"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="#ffd700">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/blankRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/blankTextViewRow6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow9"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question6Text"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="How many pitches do you throw?"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+            <EditText
+                android:id="@+id/Question6EditText"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="#ffd700" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/blankRow7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/blankTextViewRow7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow10"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question7Text"
+                android:layout_width="325dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="Have you played a position"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow11"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question7TextLine2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="in the field before? (Yes/No)"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+            <EditText
+                android:id="@+id/Question7EditText"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="#ffd700">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/blankRow8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/blankTextViewRow8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow12"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question8Text"
+                android:layout_width="325dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="How many serious arm"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableRow13"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Question8TextLine2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:text="injuries have you had?"
+                android:gravity="left"
+                android:textColor="#ffffffff">
+            </TextView>
+            <EditText
+                android:id="@+id/Question8EditText"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="#ffd700">
+            </EditText>
+        </LinearLayout>
+
+
 
 </TableLayout>
 </RelativeLayout>
