@@ -13,10 +13,13 @@
         android:id="@+id/joey"
         android:src= "@mipmap/joey">
     </ImageView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
@@ -80,8 +83,9 @@
             android:id="@+id/Question1EditText"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:gravity="right"
-            android:background="#ffd700" />
+            android:gravity="center"
+            android:background="#ffd700"
+            android:editable="true" />
     </LinearLayout>
 
         <LinearLayout
@@ -140,8 +144,9 @@
                 android:id="@+id/Question2EditText"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:gravity="right"
-                android:background="#ffd700">
+                android:gravity="center"
+                android:background="#ffd700"
+                android:editable="true">
             </EditText>
         </LinearLayout>
 
@@ -181,8 +186,9 @@
                 android:id="@+id/Question3EditText"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:gravity="right"
-                android:background="#ffd700" />
+                android:gravity="center"
+                android:background="#ffd700"
+                android:editable="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -241,8 +247,9 @@
                 android:id="@+id/Question4EditText"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:gravity="right"
-                android:background="#ffd700">
+                android:gravity="center"
+                android:background="#ffd700"
+                android:editable="true">
             </EditText>
         </LinearLayout>
 
@@ -302,8 +309,9 @@
                 android:id="@+id/Question5EditText"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:gravity="right"
-                android:background="#ffd700">
+                android:gravity="center"
+                android:background="#ffd700"
+                android:editable="true">
             </EditText>
         </LinearLayout>
 
@@ -343,8 +351,9 @@
                 android:id="@+id/Question6EditText"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:gravity="right"
-                android:background="#ffd700" />
+                android:gravity="center"
+                android:background="#ffd700"
+                android:editable="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -403,8 +412,9 @@
                 android:id="@+id/Question7EditText"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:gravity="right"
-                android:background="#ffd700">
+                android:gravity="center"
+                android:background="#ffd700"
+                android:editable="true">
             </EditText>
         </LinearLayout>
 
@@ -464,12 +474,45 @@
                 android:id="@+id/Question8EditText"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:gravity="right"
-                android:background="#ffd700">
+                android:gravity="center"
+                android:background="#ffd700"
+                android:editable="true">
             </EditText>
         </LinearLayout>
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/blankRow9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/blankTextViewRow9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="">
+            </TextView>
+        </LinearLayout>
 
-
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/buttonRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/PCalculateButton"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:background="#ffd700"
+                android:textSize="18sp"
+                android:text="Calculate"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:layout_gravity="center">
+            </Button>
+        </LinearLayout>
 </TableLayout>
+</ScrollView>
 </RelativeLayout>
