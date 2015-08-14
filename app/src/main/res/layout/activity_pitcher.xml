@@ -7,6 +7,12 @@
     tools:context="com.armagefinder.morriss.armagefinder.PitcherActivity"
     android:paddingRight="10dp"
     android:paddingLeft="10dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/joey"
+        android:src= "@mipmap/joey">
+    </ImageView>
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
@@ -16,8 +22,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
-        tools:context=".PitcherActivity"
-        android:background="#ff000000">
+        tools:context=".PitcherActivity">
 
 
     <LinearLayout
@@ -35,7 +40,7 @@
             android:textSize="18sp"
             android:text="Answer the following questions:"
             android:gravity="center"
-            android:textColor="#ffffffff">
+            android:textColor="#ffd700">
         </TextView>
     </LinearLayout>
 
@@ -69,7 +74,7 @@
             android:textSize="14sp"
             android:text="How old are you?"
             android:gravity="left"
-            android:textColor="#ffffffff">
+            android:textColor="#ffd700">
         </TextView>
         <EditText
             android:id="@+id/Question1EditText"
@@ -109,7 +114,7 @@
                 android:textSize="14sp"
                 android:text="How many years have"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
 
         </LinearLayout>
@@ -129,7 +134,7 @@
                 android:textSize="14sp"
                 android:text="you been pitching?"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
             <EditText
                 android:id="@+id/Question2EditText"
@@ -170,7 +175,7 @@
                 android:textSize="14sp"
                 android:text="How hard do you throw? (MPH)"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
             <EditText
                 android:id="@+id/Question3EditText"
@@ -210,7 +215,7 @@
                 android:textSize="14sp"
                 android:text="How many days a week"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
 
         </LinearLayout>
@@ -230,7 +235,7 @@
                 android:textSize="14sp"
                 android:text="do you play catch?"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
             <EditText
                 android:id="@+id/Question4EditText"
@@ -271,7 +276,7 @@
                 android:textSize="14sp"
                 android:text="How many days a week do"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
 
         </LinearLayout>
@@ -291,7 +296,7 @@
                 android:textSize="14sp"
                 android:text="you throw a flatground?"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
             <EditText
                 android:id="@+id/Question5EditText"
@@ -332,7 +337,7 @@
                 android:textSize="14sp"
                 android:text="How many pitches do you throw?"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
             <EditText
                 android:id="@+id/Question6EditText"
@@ -372,7 +377,7 @@
                 android:textSize="14sp"
                 android:text="Have you played a position"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
 
         </LinearLayout>
@@ -392,7 +397,7 @@
                 android:textSize="14sp"
                 android:text="in the field before? (Yes/No)"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
             <EditText
                 android:id="@+id/Question7EditText"
@@ -433,7 +438,7 @@
                 android:textSize="14sp"
                 android:text="How many serious arm"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
 
         </LinearLayout>
@@ -453,7 +458,7 @@
                 android:textSize="14sp"
                 android:text="injuries have you had?"
                 android:gravity="left"
-                android:textColor="#ffffffff">
+                android:textColor="#ffd700">
             </TextView>
             <EditText
                 android:id="@+id/Question8EditText"
