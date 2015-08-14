@@ -1,39 +1,23 @@
 package com.armagefinder.morriss.armagefinder;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 
-public class PitcherActivity extends AppCompatActivity {
-    public TextView test;
+public class ResultsActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pitcher);
-        //test = (TextView)findViewById(R.id.test);
-        //String Age = Integer.toString(MainActivity.age);
-        //test.setText(Age);
+        setContentView(R.layout.activity_results);
     }
-
-    public void onPCalculateButtonClicked(View view){
-        Intent results = new Intent(this, ResultsActivity.class);
-        startActivity(results);
-    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_pitcher, menu);
+        getMenuInflater().inflate(R.menu.menu_results, menu);
         return true;
     }
 
