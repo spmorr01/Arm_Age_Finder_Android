@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()) {
 
             case R.id.PCheckBox:
-
-                age += 5;
                 PPCheckBox.setChecked(false);
                 DPCheckBox.setChecked(false);
                 Intent pitcher = new Intent(this, PitcherActivity.class);
@@ -52,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

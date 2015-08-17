@@ -193,6 +193,59 @@
             </TextView>
         </LinearLayout>
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/blankRow7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/blankTextViewRow7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/blankRow8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/blankTextViewRow8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/RestartButtonRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/RestartButton"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:background="#ffd700"
+                android:textSize="18sp"
+                android:text="Restart"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:onClick="onRestartButtonClicked">
+            </Button>
+        </LinearLayout>
+
+
+
+
 
     </TableLayout>
 </RelativeLayout>
