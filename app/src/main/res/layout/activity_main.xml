@@ -3,17 +3,10 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center"
-    android:background="#ff000000"
+    android:background="@mipmap/browning"
     tools:context="com.armagefinder.morriss.armagefinder.MainActivity"
     android:paddingRight="10dp"
     android:paddingLeft="10dp">
-
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/browning"
-        android:src= "@mipmap/browning">
-    </ImageView>
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"

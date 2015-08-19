@@ -3,17 +3,11 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center"
-    android:background="#ff000000"
+    android:background="@mipmap/mac"
     tools:context="com.armagefinder.morriss.armagefinder.ResultsActivity"
     android:paddingRight="10dp"
     android:paddingLeft="10dp">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mac"
-        android:src= "@mipmap/mac">
-    </ImageView>
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"

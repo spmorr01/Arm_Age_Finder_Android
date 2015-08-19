@@ -3,16 +3,11 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center"
-    android:background="#ff000000"
+    android:background="@mipmap/joey"
     tools:context="com.armagefinder.morriss.armagefinder.PitcherActivity"
     android:paddingRight="10dp"
     android:paddingLeft="10dp">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/joey"
-        android:src= "@mipmap/joey">
-    </ImageView>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="fill_parent">
