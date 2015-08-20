@@ -3,16 +3,12 @@ package com.armagefinder.morriss.armagefinder;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 
 public class PitcherActivity extends AppCompatActivity {
@@ -25,7 +21,6 @@ public class PitcherActivity extends AppCompatActivity {
     public EditText Question7EditText;
     public EditText Question8EditText;
 
-    boolean check;
     int falseChecks = 0;
     int Question1AnswerInt;
     String Question1AnswerString;

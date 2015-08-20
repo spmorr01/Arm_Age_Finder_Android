@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         PCheckBox = (CheckBox) findViewById(R.id.PCheckBox);
         PPCheckBox = (CheckBox) findViewById(R.id.PPCheckBox);
         DPCheckBox = (CheckBox) findViewById(R.id.DPCheckBox);
+        age = 0;
     }
 
     public void onCheckboxClicked(View view) {
