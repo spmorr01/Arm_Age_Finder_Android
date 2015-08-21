@@ -32,6 +32,10 @@
             android:name=".PositionPlayerActivity"
             android:label="@string/title_activity_position_player" >
         </activity>
+        <activity
+            android:name=".DualPlayerActivity"
+            android:label="@string/title_activity_dual_player" >
+        </activity>
     </application>
 
 </manifest>

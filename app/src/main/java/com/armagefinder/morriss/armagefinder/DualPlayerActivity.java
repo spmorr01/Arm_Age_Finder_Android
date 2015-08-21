@@ -3,15 +3,14 @@ package com.armagefinder.morriss.armagefinder;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
-
-public class PitcherActivity extends AppCompatActivity {
+public class DualPlayerActivity extends AppCompatActivity {
     public EditText Question1EditText;
     public EditText Question2EditText;
     public EditText Question3EditText;
@@ -20,6 +19,8 @@ public class PitcherActivity extends AppCompatActivity {
     public EditText Question6EditText;
     public EditText Question7EditText;
     public EditText Question8EditText;
+    public EditText Question9EditText;
+    public EditText Question10EditText;
 
     int falseChecks = 0;
     int Question1AnswerInt;
@@ -34,30 +35,32 @@ public class PitcherActivity extends AppCompatActivity {
     String Question5AnswerString;
     int Question6AnswerInt;
     String Question6AnswerString;
+    int Question7AnswerInt;
     String Question7AnswerString;
     int Question8AnswerInt;
     String Question8AnswerString;
+    int Question9AnswerInt;
+    String Question9AnswerString;
+    int Question10AnswerInt;
+    String Question10AnswerString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pitcher);
+        setContentView(R.layout.activity_dual_player);
     }
 
-    public void onPCalculateButtonClicked(View view){
-        MainActivity.age += 5;
+    public void onPCalculateButtonClicked(View view) {
+        MainActivity.age += 2;
 
-        Question1EditText = (EditText)findViewById(R.id.Question1EditText);
+        Question1EditText = (EditText) findViewById(R.id.Question1EditText);
         Question1AnswerString = Question1EditText.getText().toString();
-        if(tryParseIntQuestion1(Question1AnswerString))
-        {
+        if (tryParseIntQuestion1(Question1AnswerString)) {
             Question1AnswerInt = Integer.parseInt(Question1AnswerString);  //We know it is safe to parse.
             MainActivity.age += Question1AnswerInt;
-        }
-        else
-        {
+        } else {
             falseChecks++;
-            AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
+            AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Please enter a valid numeric value on question 1.");
             dlgAlert.setTitle("Error: Invalid Integer");
             dlgAlert.setPositiveButton("OK", null);
@@ -354,20 +357,80 @@ public class PitcherActivity extends AppCompatActivity {
 
         Question7EditText = (EditText)findViewById(R.id.Question7EditText);
         Question7AnswerString = Question7EditText.getText().toString();
-        if (Question7AnswerString.equals("No") || Question7AnswerString.equals("no") || Question7AnswerString.equals("NO") || Question7AnswerString.equals("nO"))
+        if(tryParseIntQuestion7(Question7AnswerString))
         {
-            MainActivity.age += 0;
+            Question7AnswerInt = Integer.parseInt(Question7AnswerString);
+            if (Question7AnswerInt == 1)
+            {
+                falseChecks++;
+                AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
+                dlgAlert.setMessage("This is for position players, not pitchers.");
+                dlgAlert.setTitle("Error:");
+                dlgAlert.setPositiveButton("OK", null);
+                dlgAlert.setCancelable(true);
+                dlgAlert.create().show();
+
+                dlgAlert.setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        });
+            }
+
+            else if (Question7AnswerInt == 2)
+            {
+                MainActivity.age += 2;
+            }
+            else if (Question7AnswerInt == 3)
+            {
+                MainActivity.age += 0;
+            }
+            else if (Question7AnswerInt == 4)
+            {
+                MainActivity.age += 0;
+            }
+            else if (Question7AnswerInt == 5)
+            {
+                MainActivity.age += 1;
+            }
+            else if (Question7AnswerInt == 6)
+            {
+                MainActivity.age += 1;
+            }
+            else if (Question7AnswerInt == 7 || Question7AnswerInt == 8)
+            {
+                MainActivity.age += 1;
+            }
+            else if (Question7AnswerInt == 9)
+            {
+                MainActivity.age += 2;
+            }
+            else
+            {
+                falseChecks++;
+                AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
+                dlgAlert.setMessage("Please enter a valid position number on question 7.");
+                dlgAlert.setTitle("Error: Invalid Position");
+                dlgAlert.setPositiveButton("OK", null);
+                dlgAlert.setCancelable(true);
+                dlgAlert.create().show();
+
+                dlgAlert.setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        });
+            }
         }
-        else if (Question7AnswerString.equals("Yes") || Question7AnswerString.equals("yes") || Question7AnswerString.equals("YES") || Question7AnswerString.equals("yEs") || Question7AnswerString.equals("yeS") || Question7AnswerString.equals("yES") || Question7AnswerString.equals("YEs"))
-        {
-            MainActivity.age += 2;
-        }
+
         else
         {
             falseChecks++;
             AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
-            dlgAlert.setMessage("Please format your entry like the example in question 7");
-            dlgAlert.setTitle("Error: Invalid Input");
+            dlgAlert.setMessage("Please enter a valid numeric value on question 7.");
+            dlgAlert.setTitle("Error: Invalid Integer");
             dlgAlert.setPositiveButton("OK", null);
             dlgAlert.setCancelable(true);
             dlgAlert.create().show();
@@ -389,15 +452,113 @@ public class PitcherActivity extends AppCompatActivity {
             {
                 MainActivity.age += 0;
             }
-            else if (Question8AnswerInt == 1)
+            else if (Question8AnswerInt > 0 && Question8AnswerInt < 5)
+            {
+                MainActivity.age++;
+            }
+            else if (Question8AnswerInt >= 5 && Question8AnswerInt < 10)
+            {
+                MainActivity.age += 2;
+            }
+            else if (Question8AnswerInt >= 10 && Question8AnswerInt < 15)
+            {
+                MainActivity.age += 3;
+            }
+            else if (Question8AnswerInt >= 15 && Question8AnswerInt < 20)
+            {
+                MainActivity.age += 4;
+            }
+            else if (Question8AnswerInt >= 20 && Question8AnswerInt < 25)
             {
                 MainActivity.age += 5;
             }
-            else if (Question8AnswerInt == 2)
+            else
+            {
+                MainActivity.age += 6;
+            }
+        }
+
+        else
+        {
+            falseChecks++;
+            AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
+            dlgAlert.setMessage("Please enter a valid numeric value on question 8.");
+            dlgAlert.setTitle("Error: Invalid Integer");
+            dlgAlert.setPositiveButton("OK", null);
+            dlgAlert.setCancelable(true);
+            dlgAlert.create().show();
+
+            dlgAlert.setPositiveButton("Ok",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                    });
+        }
+
+        Question9EditText = (EditText)findViewById(R.id.Question9EditText);
+        Question9AnswerString = Question9EditText.getText().toString();
+        if(tryParseIntQuestion9(Question9AnswerString))
+        {
+            Question9AnswerInt = Integer.parseInt(Question9AnswerString);
+            if (Question9AnswerInt == 0)
+            {
+                MainActivity.age += 0;
+            }
+            else if (Question9AnswerInt >= 0 && Question9AnswerInt <= 4)
+            {
+                MainActivity.age += 1;
+            }
+            else if (Question9AnswerInt >= 5 && Question9AnswerInt <= 9)
+            {
+                MainActivity.age += 2;
+            }
+            else if (Question9AnswerInt >= 10 && Question9AnswerInt <= 14)
+            {
+                MainActivity.age += 3;
+            }
+            else if (Question9AnswerInt >= 15)
+            {
+                MainActivity.age += 4;
+            }
+        }
+
+        else
+        {
+            falseChecks++;
+            AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
+            dlgAlert.setMessage("Please enter a valid numeric value on question 9.");
+            dlgAlert.setTitle("Error: Invalid Integer");
+            dlgAlert.setPositiveButton("OK", null);
+            dlgAlert.setCancelable(true);
+            dlgAlert.create().show();
+
+            dlgAlert.setPositiveButton("Ok",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                    });
+        }
+
+        Question10EditText = (EditText)findViewById(R.id.Question10EditText);
+        Question10AnswerString = Question10EditText.getText().toString();
+        if(tryParseIntQuestion10(Question10AnswerString))
+        {
+            Question10AnswerInt = Integer.parseInt(Question10AnswerString);
+            if (Question10AnswerInt == 0)
+            {
+                MainActivity.age += 0;
+            }
+            else if (Question10AnswerInt == 1)
+            {
+                MainActivity.age += 5;
+            }
+            else if (Question10AnswerInt == 2)
             {
                 MainActivity.age += 10;
             }
-            else if (Question8AnswerInt > 2)
+            else if (Question10AnswerInt > 2)
             {
                 MainActivity.age += 15;
             }
@@ -406,7 +567,7 @@ public class PitcherActivity extends AppCompatActivity {
         {
             falseChecks++;
             AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
-            dlgAlert.setMessage("Please enter a valid numeric value on question 8.");
+            dlgAlert.setMessage("Please enter a valid numeric value on question 10.");
             dlgAlert.setTitle("Error: Invalid Integer");
             dlgAlert.setPositiveButton("OK", null);
             dlgAlert.setCancelable(true);
@@ -503,6 +664,18 @@ public class PitcherActivity extends AppCompatActivity {
         }
     }
 
+    private boolean tryParseIntQuestion7(String question7AnswerString) {
+        try
+        {
+            Integer.parseInt(question7AnswerString);
+            return true;
+        } catch(NumberFormatException nfe)
+        {
+            falseChecks++;
+            return false;
+        }
+    }
+
     private boolean tryParseIntQuestion8(String question8AnswerString) {
         try
         {
@@ -515,11 +688,34 @@ public class PitcherActivity extends AppCompatActivity {
         }
     }
 
+    private boolean tryParseIntQuestion9(String question9AnswerString) {
+        try
+        {
+            Integer.parseInt(question9AnswerString);
+            return true;
+        } catch(NumberFormatException nfe)
+        {
+            falseChecks++;
+            return false;
+        }
+    }
+
+    private boolean tryParseIntQuestion10(String question10AnswerString) {
+        try
+        {
+            Integer.parseInt(question10AnswerString);
+            return true;
+        } catch(NumberFormatException nfe)
+        {
+            falseChecks++;
+            return false;
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_pitcher, menu);
+        getMenuInflater().inflate(R.menu.menu_dual_player, menu);
         return true;
     }
 

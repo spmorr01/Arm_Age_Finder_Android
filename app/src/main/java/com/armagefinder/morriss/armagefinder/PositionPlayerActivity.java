@@ -52,6 +52,7 @@ public class PositionPlayerActivity extends AppCompatActivity {
         }
         else
         {
+            falseChecks++;
             AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Please enter a valid numeric value on question 1.");
             dlgAlert.setTitle("Error: Invalid Integer");
@@ -139,6 +140,7 @@ public class PositionPlayerActivity extends AppCompatActivity {
 
         else
         {
+            falseChecks++;
             AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Please enter a valid numeric value on question 2.");
             dlgAlert.setTitle("Error: Invalid Integer");
@@ -191,6 +193,7 @@ public class PositionPlayerActivity extends AppCompatActivity {
 
         else
         {
+            falseChecks++;
             AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Please enter a valid numeric value on question 3.");
             dlgAlert.setTitle("Error: Invalid Integer");
@@ -235,6 +238,7 @@ public class PositionPlayerActivity extends AppCompatActivity {
 
         else
         {
+            falseChecks++;
             AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Please enter a valid numeric value on question 4.");
             dlgAlert.setTitle("Error: Invalid Integer");
@@ -296,6 +300,7 @@ public class PositionPlayerActivity extends AppCompatActivity {
 
         else
         {
+            falseChecks++;
             AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Please enter a valid numeric value on question 5.");
             dlgAlert.setTitle("Error: Invalid Integer");
@@ -364,6 +369,7 @@ public class PositionPlayerActivity extends AppCompatActivity {
         }
         else
         {
+            falseChecks++;
             AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Please enter a valid numeric value on question 7.");
             dlgAlert.setTitle("Error: Invalid Integer");

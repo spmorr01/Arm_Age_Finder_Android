@@ -6,4 +6,5 @@
     <string name="title_activity_pitcher">Pitcher</string>
     <string name="title_activity_results">Results</string>
     <string name="title_activity_position_player">Position Player</string>
+    <string name="title_activity_dual_player">Dual Player</string>
 </resources>
