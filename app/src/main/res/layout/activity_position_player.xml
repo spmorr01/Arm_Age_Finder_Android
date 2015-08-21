@@ -1,0 +1,493 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@mipmap/kreft"
+    tools:context="com.armagefinder.morriss.armagefinder.PositionPlayerActivity"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            tools:context=".PositionPlayerActivity"
+            android:id="@+id/PositionPlayerTable"
+            android:layout_centerInParent="true">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/headerTableRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/headerTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="18sp"
+                    android:text="Answer the following questions:"
+                    android:gravity="center"
+                    android:textColor="#ffd700">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/blankRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/blankTextViewRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question1Text"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="How old are you?"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+                <EditText
+                    android:id="@+id/Question1EditText"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="#ffd700"
+                    android:editable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/blankRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/blankTextViewRow2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question2Text"
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="What position do you"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question2TextLine2"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="primarily play? (2-9)"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+                <EditText
+                    android:id="@+id/Question2EditText"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="#ffd700"
+                    android:editable="true">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/blankRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/blankTextViewRow3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow4"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question3Text"
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="How many years have you"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow5"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question3TextLine2"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="been playing this position?"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+                <EditText
+                    android:id="@+id/Question3EditText"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="#ffd700"
+                    android:editable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/blankRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/blankTextViewRow4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow6"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question4Text"
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="About how many plays are"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow7"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question4TextLine2"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="you apart of each game?"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+                <EditText
+                    android:id="@+id/Question4EditText"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="#ffd700"
+                    android:editable="true">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/blankRow5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/blankTextViewRow5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow8"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question5Text"
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="How many days a week do"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow9"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question5TextLine2"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="you play catch?"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+                <EditText
+                    android:id="@+id/Question5EditText"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="#ffd700"
+                    android:editable="true">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/blankRow6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/blankTextViewRow6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow10"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question6Text"
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="Have you ever"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow11"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question6TextLine2"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="pitched before? (Yes/No)"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+                <EditText
+                    android:id="@+id/Question6EditText"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="#ffd700"
+                    android:editable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/blankRow7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/blankTextViewRow7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow12"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question7Text"
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="How many serious"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tableRow13"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Question7TextLine2"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="14sp"
+                    android:text="iarm injuries have you had?"
+                    android:gravity="left"
+                    android:textColor="#ffd700">
+                </TextView>
+                <EditText
+                    android:id="@+id/Question7EditText"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="#ffd700"
+                    android:editable="true">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/blankRow9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/blankTextViewRow9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/buttonRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/PCalculateButton"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:background="#ffd700"
+                    android:textSize="18sp"
+                    android:text="Calculate"
+                    android:textColor="#000000"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:onClick="onPPCalculateButtonClicked">
+                </Button>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

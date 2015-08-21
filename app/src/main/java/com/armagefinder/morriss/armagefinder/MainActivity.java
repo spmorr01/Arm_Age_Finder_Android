@@ -1,7 +1,6 @@
 package com.armagefinder.morriss.armagefinder;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -22,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         PCheckBox = (CheckBox) findViewById(R.id.PCheckBox);
         PPCheckBox = (CheckBox) findViewById(R.id.PPCheckBox);
         DPCheckBox = (CheckBox) findViewById(R.id.DPCheckBox);
+        age = 0;
     }
 
     public void onCheckboxClicked(View view) {
@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
                 PCheckBox.setChecked(false);
                 DPCheckBox.setChecked(false);
-
+                Intent positionPlayer = new Intent(this, PositionPlayerActivity.class);
+                startActivity(positionPlayer);
                 break;
 
             case R.id.DPCheckBox:
