@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:typeface="serif"
-                android:textSize="18sp"
+                android:textSize="24sp"
                 android:text="Your arm is this many years old: "
                 android:gravity="center"
                 android:textColor="#ffd700">
@@ -80,12 +80,12 @@
                 android:id="@+id/ArmAge"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:textStyle="bold|italic"
                 android:typeface="serif"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:text="(RESULT)"
                 android:gravity="center"
-                android:textColor="#000000">
+                android:textColor="#ffd700">
             </TextView>
         </LinearLayout>
 
@@ -131,10 +131,11 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:typeface="serif"
-                android:textSize="18sp"
+                android:textSize="24sp"
                 android:text="Diagnosis: "
                 android:gravity="center"
-                android:textColor="#ffd700">
+                android:textColor="#ffd700"
+                android:textIsSelectable="true">
             </TextView>
         </LinearLayout>
 
@@ -178,12 +179,12 @@
                 android:id="@+id/Diagnosis"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:textStyle="bold|italic"
                 android:typeface="serif"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:text="(DIAGNOSIS)"
                 android:gravity="center"
-                android:textColor="#000000">
+                android:textColor="#ffd700">
             </TextView>
         </LinearLayout>
 

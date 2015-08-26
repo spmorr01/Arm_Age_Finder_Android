@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
 
                 PCheckBox.setChecked(false);
                 PPCheckBox.setChecked(false);
-
+                Intent dualPlayer = new Intent(this, DualPlayerActivity.class);
+                startActivity(dualPlayer);
                 break;
         }
     }

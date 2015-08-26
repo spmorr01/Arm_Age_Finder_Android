@@ -30,11 +30,11 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:typeface="serif"
                 android:textSize="18sp"
                 android:text="What position do you play?"
                 android:gravity="center"
-                android:textColor="#ffd700">
+                android:textColor="#ffd700"
+                android:typeface="serif">
             </TextView>
         </LinearLayout>
 
@@ -63,30 +63,36 @@
                 android:id="@+id/PCheckBox"
                 android:text="Pitcher"
                 android:textColor="#ffd700"
-                android:buttonTint="#ffd700"
+                android:buttonTint="#ffffff"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
-                android:onClick="onCheckboxClicked">
+                android:onClick="onCheckboxClicked"
+                android:textStyle="bold|italic"
+                android:typeface="serif">
             </CheckBox>
             <CheckBox
                 android:id="@+id/PPCheckBox"
                 android:text="Positon Player"
                 android:textColor="#ffd700"
-                android:buttonTint="#ffd700"
+                android:buttonTint="#ffffff"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:onClick="onCheckboxClicked">
+                android:onClick="onCheckboxClicked"
+                android:typeface="serif"
+                android:textStyle="bold|italic">
             </CheckBox>
             <CheckBox
                 android:id="@+id/DPCheckBox"
                 android:text="Dual Player"
                 android:textColor="#ffd700"
-                android:buttonTint="#ffd700"
+                android:buttonTint="#ffffff"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
-                android:onClick="onCheckboxClicked">
+                android:onClick="onCheckboxClicked"
+                android:textStyle="bold|italic"
+                android:typeface="serif">
             </CheckBox>
         </LinearLayout>
     </TableLayout>

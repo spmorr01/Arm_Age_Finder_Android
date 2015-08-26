@@ -50,7 +50,7 @@ public class DualPlayerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dual_player);
     }
 
-    public void onPCalculateButtonClicked(View view) {
+    public void onDPCalculateButtonClicked(View view) {
         MainActivity.age += 2;
 
         Question1EditText = (EditText) findViewById(R.id.Question1EditText);
