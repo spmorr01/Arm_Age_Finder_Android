@@ -23,7 +23,8 @@
             android:name=".PitcherActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_pitcher"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/PitcherBackground">
         </activity>
         <activity
             android:name=".ResultsActivity"
@@ -31,11 +32,13 @@
         </activity>
         <activity
             android:name=".PositionPlayerActivity"
-            android:label="@string/title_activity_position_player" >
+            android:label="@string/title_activity_position_player"
+            android:theme="@style/PositionPlayerBackground">
         </activity>
         <activity
             android:name=".DualPlayerActivity"
-            android:label="@string/title_activity_dual_player" >
+            android:label="@string/title_activity_dual_player"
+            android:theme="@style/DualPlayerBackground">
         </activity>
     </application>
 

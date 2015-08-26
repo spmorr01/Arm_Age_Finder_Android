@@ -5,4 +5,16 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="PitcherBackground" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/joey</item>
+    </style>
+
+    <style name="PositionPlayerBackground" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/kreft</item>
+    </style>
+
+    <style name="DualPlayerBackground" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/buss</item>
+    </style>
+
 </resources>
