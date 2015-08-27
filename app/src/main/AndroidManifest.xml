@@ -5,13 +5,13 @@
     <application
         android:debuggable="true"
         android:allowBackup="true"
+        android:label="Arm Age Finder"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
+            android:label="Arm Age Finder"
             android:configChanges="orientation|keyboardHidden"
-            android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,24 +21,27 @@
         </activity>
         <activity
             android:name=".PitcherActivity"
+            android:label="Pitcher"
             android:configChanges="orientation|keyboardHidden"
-            android:label="@string/title_activity_pitcher"
             android:screenOrientation="portrait"
             android:theme="@style/PitcherBackground">
         </activity>
         <activity
             android:name=".ResultsActivity"
-            android:label="@string/title_activity_results" >
+            android:label="Results"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".PositionPlayerActivity"
-            android:label="@string/title_activity_position_player"
-            android:theme="@style/PositionPlayerBackground">
+            android:label="Position Player"
+            android:theme="@style/PositionPlayerBackground"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".DualPlayerActivity"
-            android:label="@string/title_activity_dual_player"
-            android:theme="@style/DualPlayerBackground">
+            android:label="Dual Player"
+            android:theme="@style/DualPlayerBackground"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

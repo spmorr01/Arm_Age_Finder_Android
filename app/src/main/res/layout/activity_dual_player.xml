@@ -7,18 +7,18 @@
     tools:context="com.armagefinder.morriss.armagefinder.DualPlayerActivity">
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="fill_parent">
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:paddingLeft="5dp"
         android:paddingRight="0dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
-        tools:context=".PitcherActivity"
-        android:id="@+id/PitcherTable"
+        tools:context=".DualPlayerActivity"
+        android:id="@+id/DualPlayerTable"
         android:layout_centerInParent="true">
 
         <LinearLayout
@@ -63,7 +63,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question1Text"
-                android:layout_width="250dp"
+                android:layout_width="275dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -74,7 +74,7 @@
             </TextView>
             <EditText
                 android:id="@+id/Question1EditText"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="#ffd700"
@@ -104,7 +104,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question2Text"
-                android:layout_width="325dp"
+                android:layout_width="335dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -124,7 +124,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question2TextLine2"
-                android:layout_width="250dp"
+                android:layout_width="275dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -135,7 +135,7 @@
             </TextView>
             <EditText
                 android:id="@+id/Question2EditText"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="#ffd700"
@@ -166,7 +166,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question3Text"
-                android:layout_width="250dp"
+                android:layout_width="275dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -177,7 +177,7 @@
             </TextView>
             <EditText
                 android:id="@+id/Question3EditText"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="#ffd700"
@@ -207,7 +207,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question4Text"
-                android:layout_width="325dp"
+                android:layout_width="335dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -227,7 +227,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question4TextLine2"
-                android:layout_width="250dp"
+                android:layout_width="275dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -238,7 +238,7 @@
             </TextView>
             <EditText
                 android:id="@+id/Question4EditText"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="#ffd700"
@@ -269,7 +269,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question5Text"
-                android:layout_width="325dp"
+                android:layout_width="335dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -289,7 +289,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question5TextLine2"
-                android:layout_width="250dp"
+                android:layout_width="275dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -300,7 +300,7 @@
             </TextView>
             <EditText
                 android:id="@+id/Question5EditText"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="#ffd700"
@@ -331,7 +331,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question6Text"
-                android:layout_width="250dp"
+                android:layout_width="275dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -342,7 +342,7 @@
             </TextView>
             <EditText
                 android:id="@+id/Question6EditText"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="#ffd700"
@@ -372,7 +372,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question7Text"
-                android:layout_width="325dp"
+                android:layout_width="335dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -392,7 +392,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question7TextLine2"
-                android:layout_width="250dp"
+                android:layout_width="275dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -403,7 +403,7 @@
             </TextView>
             <EditText
                 android:id="@+id/Question7EditText"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="#ffd700"
@@ -434,7 +434,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question8Text"
-                android:layout_width="325dp"
+                android:layout_width="335dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -454,7 +454,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question8TextLine2"
-                android:layout_width="250dp"
+                android:layout_width="275dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -465,7 +465,7 @@
             </TextView>
             <EditText
                 android:id="@+id/Question8EditText"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="#ffd700"
@@ -495,7 +495,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question9Text"
-                android:layout_width="325dp"
+                android:layout_width="335dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -515,7 +515,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question9TextLine2"
-                android:layout_width="250dp"
+                android:layout_width="275dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -526,7 +526,7 @@
             </TextView>
             <EditText
                 android:id="@+id/Question9EditText"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="#ffd700"
@@ -557,7 +557,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question10Text"
-                android:layout_width="325dp"
+                android:layout_width="335dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -577,7 +577,7 @@
             android:gravity="center">
             <TextView
                 android:id="@+id/Question10TextLine2"
-                android:layout_width="250dp"
+                android:layout_width="275dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
@@ -588,7 +588,7 @@
             </TextView>
             <EditText
                 android:id="@+id/Question10EditText"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="#ffd700"
