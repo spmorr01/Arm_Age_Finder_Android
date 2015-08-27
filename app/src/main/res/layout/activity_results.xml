@@ -82,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:text="(RESULT)"
                 android:gravity="center"
                 android:textColor="#ffd700">
@@ -181,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold|italic"
                 android:typeface="serif"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:text="(DIAGNOSIS)"
                 android:gravity="center"
                 android:textColor="#ffd700">
