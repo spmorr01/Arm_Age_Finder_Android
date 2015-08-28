@@ -3,7 +3,6 @@
     package="com.armagefinder.morriss.armagefinder" >
 
     <application
-        android:debuggable="true"
         android:allowBackup="true"
         android:label="Arm Age Finder"
         android:icon="@mipmap/ic_launcher"
