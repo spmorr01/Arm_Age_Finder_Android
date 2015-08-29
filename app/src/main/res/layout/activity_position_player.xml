@@ -438,7 +438,7 @@
                     android:textStyle="bold|italic"
                     android:typeface="serif"
                     android:textSize="14sp"
-                    android:text="iarm injuries have you had?"
+                    android:text="arm injuries have you had?"
                     android:gravity="left"
                     android:textColor="#ffd700">
                 </TextView>
